@@ -1,4 +1,4 @@
 # labdarugas
-Ezután javítsuk ki a komponenst! class-t át kell írni className-re, az input tage-ek végére pedig lezárás kell: <input id="meccs-checkbox" type="checkbox" name="meccs" value="igen"/> vagyik egy perjel a végére!
-Ezután másoljuk át a css-t és a képet. A css-t importáljuk a komponensben. Végül pedig ellenőrizzük le az app.js file-ban, hogy sikeresen megjelenik-e a komponens
+Az ürlap beküldéséhez importáluk a useEffect, useState-t.
+Ezután a useState-t használva mentsük el az ürlap adatait. Az onChange függvény használatával tároljuk el azokat, ügyelve arra, hogy legyen egy alapértelmezet érték, ha a felhasználó nem írna, vagy választana ki semmit az adott pontnál.
 
