@@ -10,6 +10,41 @@ export default function Homepage() {
     const [category, setCategory] = useState("alsós");
     const [urlImg, seturlImg] = useState("");
 
+
+    const kuld = () => {
+        if(document.querySelector('#meccs-checkbox').checked){
+            fetch('https://localhost:44376/api/SchoolTeams',{
+                method:"POST",
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                body:JSON.stringify(
+                    {
+                        
+                        TeamName: name,
+                        TeamGroup: category,
+                        Wins: winner,
+                        ImageUrl: urlImg,
+                    }),
+                    
+            })
+            //.then(response => response.json())
+            //.then(data => console.log(data))
+            .then((response =>{
+                if(!response.ok){
+                    throw new Error("Hiba történt a küldés során!")
+                }
+                else{
+                    alert(`Sikeres regisztráció!`)
+                }
+            }))
+            .catch((error)=>{alert(error)
+            });
+        }
+        else{
+            alert("Nem fogadtad el!")
+    };
+
   return (
     <div className="OpenPage">
         <div className="container-fluid">
@@ -82,7 +117,7 @@ export default function Homepage() {
                 </label>
             <div className="horizontal center">
                 <div className="label"></div>
-                <button id="saveButton" title="Mentés" >MENTÉS</button>
+                <button id="saveButton" title="Mentés" onClick={kuld}>MENTÉS</button>
             </div>
         </div>
     </div>
