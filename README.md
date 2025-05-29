@@ -1,4 +1,6 @@
 # labdarugas
-Az ürlap beküldéséhez importáluk a useEffect, useState-t.
-Ezután a useState-t használva mentsük el az ürlap adatait. Az onChange függvény használatával tároljuk el azokat, ügyelve arra, hogy legyen egy alapértelmezet érték, ha a felhasználó nem írna, vagy választana ki semmit az adott pontnál.
+A gombra kattintáskor, küldjük el az ürlapot, de abban az esetben csak ha a checkBox be lett pipálva.
+Elősször is egy onClick eseménykor meghívjuk a függvényt és ellenörizzük a checkBox checked értékét.
+Utána fetch segítségével elküldjük az eltárolt adatokat a backend felé!
+Érdemes a hibaüzenetekre is figyelni, ami az ellenőrzést is segíti.
 
