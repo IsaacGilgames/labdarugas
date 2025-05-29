@@ -1,3 +1,4 @@
 # labdarugas
-Elsőklént is az első feladat miatt másoljuk át az src-be a bootstrap.min.css filet, és azt importáljuk is az app.js file-ban. Az app.js átírtható app.jsx-re, ami megkönnyíti a későbbi feladatainkat!
-Hozz létre egy új komponenst! Én itt egy homepage.jsx komponenst hoztam létre. Ebbe másold át a homapage.html megfelelő tartalmát. Ez itt a body tagen belüli rész.
+Ezután javítsuk ki a komponenst! class-t át kell írni className-re, az input tage-ek végére pedig lezárás kell: <input id="meccs-checkbox" type="checkbox" name="meccs" value="igen"/> vagyik egy perjel a végére!
+Ezután másoljuk át a css-t és a képet. A css-t importáljuk a komponensben. Végül pedig ellenőrizzük le az app.js file-ban, hogy sikeresen megjelenik-e a komponens
+
