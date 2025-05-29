@@ -1,3 +1,2 @@
 # labdarugas
-A következőekben egy korábban megíraratott és veletek megosztott dolgozat megoldásán fogok végig menni. Az elágazásokon (branch) tudjátok megénzni mindig a következő lépéseket!
-Itt látható az alap src mapp, amit telepítés után fogtok látni! Itt még semmit se módosítottam!
+Elsőklént is az első feladat miatt másoljuk át az src-be a bootstrap.min.css filet, és azt importáljuk is az app.js file-ban. Az app.js átírtható app.jsx-re, ami megkönnyíti a későbbi feladatainkat!
