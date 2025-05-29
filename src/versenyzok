@@ -1,7 +1,22 @@
+import { useState, useEffect } from "react";
 
 function Versenyzok() {
 
-    
+    const [karakterek, setkarakterek] = useState([]);
+    useEffect(() => {
+        fetch('https://localhost:44376/api/SchoolTeams')
+        .then(response => {
+            if(!response.ok){
+                throw new Error("Hiba történt a lekérés során!")
+            }
+            return response.json()
+        })
+        //.then(data => console.log(data)) elösször érdemes leellenőrzni, hogy meg kaptuk-e az adatokat!
+        .then(data => {
+            setkarakterek(data)
+        })
+        .catch((error) => console.log(error));
+      }, []);
     
 
     return (
