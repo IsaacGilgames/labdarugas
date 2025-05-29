@@ -1,10 +1,14 @@
 import './homepage.css'; 
+import React, { useEffect, useState } from "react";
 
 
 
 export default function Homepage() {
 
-    
+    const [name, setName] = useState("");
+    const [winner, setwinner] = useState(0);
+    const [category, setCategory] = useState("alsós");
+    const [urlImg, seturlImg] = useState("");
 
   return (
     <div className="OpenPage">
@@ -41,7 +45,9 @@ export default function Homepage() {
         <div className="content vertical center">
             <div className="field horizontal center">
                 <label className="label">Csapatnév:</label>
-                <input type="text" id="persons"/>
+                <input type="text" id="persons"
+                onChange={(e) => setName(e.target.value)}
+                />
                 
             </div>
             
@@ -51,7 +57,9 @@ export default function Homepage() {
                 <select
                 id="category"
                 className="form-control"
-                value={category}>
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+                >
               <option></option>
               <option value="alsós">alsós</option>
               <option value="felsős">felsős</option>
@@ -61,11 +69,11 @@ export default function Homepage() {
            
             <div className="field horizontal center">
                 <label className="label">Győzelem</label>
-                <input type="number" id="persons"  min="1" />
+                <input type="number" id="persons"  min="1" onChange={(e) => setwinner(e.target.value)}/>
             </div>
             <div className="field horizontal center" >
                 <label className="label">Kép:</label>
-                <input id="url" type="url"  />
+                <input id="url" type="url" onChange={(e) => seturlImg(e.target.value)} />
             </div>
             <label class="foci-checkbox">
                 <input id="meccs-checkbox" type="checkbox" name="meccs" value="igen"/>
