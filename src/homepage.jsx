@@ -46,16 +46,16 @@ export default function Homepage() {
     };
 
   return (
-    <div className="OpenPage">
+        <div className="OpenPage">
         <div className="container-fluid">
       {/* Navbar */}
       <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul className="navbar-nav">
             <li className="nav-item">
-            <Link className="nav-link" to="/">Diákláb Liga</Link>
+            <a className="nav-link" href="#">Diákláb Liga</a>
             </li >
             <li className="nav-item">
-            <Link className="nav-link" to="/resztvevok">Versenyzők</Link>
+            <a className="nav-link" href="#">Versenyzők</a>
             </li>
         </ul>
         </nav>
@@ -65,7 +65,7 @@ export default function Homepage() {
         <div className="bg-dark p-4 rounded-lg">
           <h1 className="display-4">Lépj pályára!</h1>
           <p className="lead">Vállald a kihívást, vegyél részt versenyünkön!</p>
-          <Link className="btn btn-success btn-lg" to="/resztvevok">Regisztrált csapatok!</Link>
+          <a className="btn btn-success btn-lg" href="#">Regisztrált csapatok!</Link>
         </div>
       </div>
       
