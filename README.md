@@ -1,6 +1,3 @@
 # labdarugas
-A gombra kattintáskor, küldjük el az ürlapot, de abban az esetben csak ha a checkBox be lett pipálva.
-Elősször is egy onClick eseménykor meghívjuk a függvényt és ellenörizzük a checkBox checked értékét.
-Utána fetch segítségével elküldjük az eltárolt adatokat a backend felé!
-Érdemes a hibaüzenetekre is figyelni, ami az ellenőrzést is segíti.
+Elkészítettük a következő komponenst versenyzok.jsx néven. Ha van forrás, szintén át lehet másolni. Ha nincs, akkor is érdemes lehet elkészíteni a táblázat alapját, amelyet utána kiegészíthetünk használva a megfelelő bootstrap osztálykijelölőket.
 
